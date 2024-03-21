@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
     gpcs::gpcsnode gpcsnh;
 
     gpcsnh.init("GPCS_system");
-    gpcsnh.subscribe("motioncommand", certaincallback);
+    gpcsnh.subscribe("motion_command", certaincallback);
 
     while(ros::ok())
     {
